@@ -1,0 +1,105 @@
+/**
+ * Nook accent palettes — override `--accent` / `--accent-foreground` for light & dark
+ * while keeping `data-theme` as light | dark. Applied via `data-theme-preset` on <html>.
+ */
+@layer base {
+  /* --- Cloud --- */
+  html[data-theme="light"][data-theme-preset="cloud"] {
+    --accent: oklch(0.58 0.16 230);
+    --accent-foreground: var(--snow);
+  }
+  html[data-theme="dark"][data-theme-preset="cloud"] {
+    --accent: oklch(0.78 0.1 225);
+    --accent-foreground: var(--eclipse);
+  }
+
+  /* --- Wisteria --- */
+  html[data-theme="light"][data-theme-preset="wisteria"] {
+    --accent: oklch(0.58 0.18 285);
+    --accent-foreground: var(--snow);
+  }
+  html[data-theme="dark"][data-theme-preset="wisteria"] {
+    --accent: oklch(0.78 0.11 285);
+    --accent-foreground: var(--eclipse);
+  }
+
+  /* --- Mint --- */
+  html[data-theme="light"][data-theme-preset="mint"] {
+    --accent: oklch(0.58 0.16 160);
+    --accent-foreground: var(--eclipse);
+  }
+  html[data-theme="dark"][data-theme-preset="mint"] {
+    --accent: oklch(0.78 0.12 158);
+    --accent-foreground: var(--eclipse);
+  }
+
+  /* --- Coral --- */
+  html[data-theme="light"][data-theme-preset="coral"] {
+    --accent: oklch(0.52 0.22 25);
+    --accent-foreground: var(--snow);
+  }
+  html[data-theme="dark"][data-theme-preset="coral"] {
+    --accent: oklch(0.62 0.2 25);
+    --accent-foreground: var(--snow);
+  }
+
+  /* --- Graphite --- */
+  html[data-theme="light"][data-theme-preset="graphite"] {
+    --accent: oklch(0.28 0.02 265);
+    --accent-foreground: var(--snow);
+  }
+  html[data-theme="dark"][data-theme-preset="graphite"] {
+    --accent: oklch(0.82 0.02 265);
+    --accent-foreground: var(--eclipse);
+  }
+
+  /* --- Fern --- */
+  html[data-theme="light"][data-theme-preset="fern"] {
+    --accent: oklch(0.58 0.2 145);
+    --accent-foreground: var(--snow);
+  }
+  html[data-theme="dark"][data-theme-preset="fern"] {
+    --accent: oklch(0.72 0.18 145);
+    --accent-foreground: var(--eclipse);
+  }
+
+  /* --- Harbor --- */
+  html[data-theme="light"][data-theme-preset="harbor"] {
+    --accent: oklch(0.5 0.2 265);
+    --accent-foreground: var(--snow);
+  }
+  html[data-theme="dark"][data-theme-preset="harbor"] {
+    --accent: oklch(0.68 0.14 265);
+    --accent-foreground: var(--snow);
+  }
+
+  /* --- Rose --- */
+  html[data-theme="light"][data-theme-preset="rose"] {
+    --accent: oklch(0.58 0.2 18);
+    --accent-foreground: var(--snow);
+  }
+  html[data-theme="dark"][data-theme-preset="rose"] {
+    --accent: oklch(0.68 0.16 20);
+    --accent-foreground: var(--snow);
+  }
+
+  /* --- Iris --- */
+  html[data-theme="light"][data-theme-preset="iris"] {
+    --accent: oklch(0.52 0.18 275);
+    --accent-foreground: var(--snow);
+  }
+  html[data-theme="dark"][data-theme-preset="iris"] {
+    --accent: oklch(0.68 0.14 275);
+    --accent-foreground: var(--snow);
+  }
+
+  /* --- Saffron --- */
+  html[data-theme="light"][data-theme-preset="saffron"] {
+    --accent: oklch(0.72 0.16 65);
+    --accent-foreground: var(--eclipse);
+  }
+  html[data-theme="dark"][data-theme-preset="saffron"] {
+    --accent: oklch(0.82 0.14 62);
+    --accent-foreground: var(--eclipse);
+  }
+}
